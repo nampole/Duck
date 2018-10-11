@@ -85,5 +85,8 @@ public class MainActivity extends Activity {
         photo.setImageResource(image);
         photo.setContentDescription(description);
     }
+    public void onImgButonClicked  (android.view.View view) {
+        // image button 을 선택하였을 경우
+    }
 
 }

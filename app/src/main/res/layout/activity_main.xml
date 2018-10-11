@@ -105,8 +105,19 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/android"
+            android:drawableRight="@drawable/diavolo"
             android:text="@string/click_me"/>
+
+        //  android:drawableLeft="@drawable/android"
+        //  android:drawableBottom="@drawable/android"
+        //  android:drawableTop="@drawable/android"
+
+        <ImageButton
+            android:id="@+id/image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/funghi"
+            android:onClick="onImgButonClicked"/>
 
 
     </LinearLayout>
