@@ -67,6 +67,18 @@
             android:textOff="@string/off"
             android:onClick="onSwitchClicked"
             />
+        <CheckBox
+            android:id="@+id/checkbox_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/milk"
+            />
+        <CheckBox
+            android:id="@+id/checkbox_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/sugar"
+            />
 
     </LinearLayout>
 

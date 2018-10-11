@@ -6,4 +6,6 @@
     <string name="app_text2">정말 예쁜 오리입니다.</string>
     <string name="on">버튼ON</string>
     <string name="off">버튼OFF</string>
+    <string name="milk">우유</string>
+    <string name="sugar">설탕</string>
 </resources>
