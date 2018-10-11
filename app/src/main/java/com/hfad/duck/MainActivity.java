@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.Switch;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
@@ -87,6 +88,10 @@ public class MainActivity extends Activity {
     }
     public void onImgButonClicked  (android.view.View view) {
         // image button 을 선택하였을 경우
+        CharSequence text = "토스트 입니다";
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(this, text, duration);
+        toast.show();
     }
 
 }

@@ -1,140 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".MainActivity"
     >
-
-    <ImageView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/duck"/>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:gravity="end"
-        android:padding="16dp"
         >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="@string/app_text1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="@string/app_text2"/>
-        <TextView
-            android:id="@+id/text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="@string/textview"/>
-        <EditText
-            android:id="@+id/edit_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/edittext"
-            android:inputType="textPassword"/>
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:onClick="onButtonClicked"/>
-        <ToggleButton
-            android:id="@+id/toggle_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOn="@string/on"
-            android:textOff="@string/off"
-            android:onClick="onToggleButtonClicked"/>
-        <Switch
-            android:id="@+id/switch_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOn="@string/on"
-            android:textOff="@string/off"
-            android:onClick="onSwitchClicked"
-            />
-        <CheckBox
-            android:id="@+id/checkbox_milk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOn="@string/milk"
-            android:onClick="onCheckboxClicked"
-            />
-        <CheckBox
-            android:id="@+id/checkbox_sugar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOn="@string/sugar"
-            android:onClick="onCheckboxClicked"
-            />
-        <RadioGroup
-            android:id="@+id/radio_group"
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/duck"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            android:padding="16dp"
             >
-            <RadioButton
-                android:id="@+id/radio_caveman"
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rtxt1"
-                android:onClick="onRadiobuttonClicked"
-                />
-            <RadioButton
-                android:id="@+id/radio_astronaut"
+                android:textSize="20sp"
+                android:text="@string/app_text1"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rtxt2"
-                android:onClick="onRadiobuttonClicked"
+                android:textSize="20sp"
+                android:text="@string/app_text2"/>
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/textview"/>
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/edittext"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:onClick="onButtonClicked"/>
+            <ToggleButton
+                android:id="@+id/toggle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/on"
+                android:textOff="@string/off"
+                android:onClick="onToggleButtonClicked"/>
+            <Switch
+                android:id="@+id/switch_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/on"
+                android:textOff="@string/off"
+                android:onClick="onSwitchClicked"
                 />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableRight="@drawable/diavolo"
-            android:text="@string/click_me"/>
+            <CheckBox
+                android:id="@+id/checkbox_milk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/milk"
+                android:onClick="onCheckboxClicked"
+                />
+            <CheckBox
+                android:id="@+id/checkbox_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/sugar"
+                android:onClick="onCheckboxClicked"
+                />
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/radio_caveman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rtxt1"
+                    android:onClick="onRadiobuttonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_astronaut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rtxt2"
+                    android:onClick="onRadiobuttonClicked"
+                    />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/diavolo"
+                android:text="@string/click_me"/>
 
-        //  android:drawableLeft="@drawable/android"
-        //  android:drawableBottom="@drawable/android"
-        //  android:drawableTop="@drawable/android"
+            //  android:drawableLeft="@drawable/android"
+            //  android:drawableTop="@drawable/android"
+            //  android:drawableRight="@drawable/android"
 
-        <ImageButton
-            android:id="@+id/image_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/funghi"
-            android:onClick="onImgButonClicked"/>
+            <ImageButton
+                android:id="@+id/image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/funghi"
+                android:onClick="onImgButonClicked"/>
 
 
-    </LinearLayout>
-    <ImageView
-        android:id="@+id/photo"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:src="@drawable/starbuzz_logo"
-        android:contentDescription="@string/starbuzz_logo"
-    />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:entries="@array/spinner_values"
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/starbuzz_logo"
+            android:contentDescription="@string/starbuzz_logo"
         />
-        <!--android:onClick="onSpinnerClicked"/>-->
 
-</FrameLayout>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_values"
+            />
+            <!--android:onClick="onSpinnerClicked"/>-->
+
+    </FrameLayout>
+</ScrollView>
