@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">오리</string>
+    <string name="textview">테스트용텍스트뷰.</string>
+    <string name="edittext">테스트용에디트텍스트.</string>
+    <string name="app_text1">이것은 오리입니다.</string>
+    <string name="app_text2">정말 예쁜 오리입니다.</string>
+    <string name="on">버튼ON</string>
+    <string name="off">버튼OFF</string>
+</resources>
