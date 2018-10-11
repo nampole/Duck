@@ -72,13 +72,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textOn="@string/milk"
+            android:onClick="onCheckboxClicked"
             />
         <CheckBox
             android:id="@+id/checkbox_sugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textOn="@string/sugar"
+            android:onClick="onCheckboxClicked"
             />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RadioButton
+                android:id="@+id/radio_caveman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rtxt1"
+                android:onClick="onRadiobuttonClicked"
+                />
+            <RadioButton
+                android:id="@+id/radio_astronaut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rtxt2"
+                android:onClick="onRadiobuttonClicked"
+                />
+        </RadioGroup>
+
 
     </LinearLayout>
 

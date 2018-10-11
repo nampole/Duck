@@ -2,6 +2,7 @@ package com.hfad.duck;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.ToggleButton;
 
@@ -34,5 +35,41 @@ public class MainActivity extends Activity {
         else {
 //            on 의 값이 false 일 경우
         }
+    }
+
+    public void onCheckboxClicked (android.view.View view) {
+        boolean con = ((android.widget.CheckBox) view).isChecked();
+        switch (view.getId()) {
+            case R.id.checkbox_milk:    //switchcase 문 분기할 때 콜론을 이용
+                if (con) {
+//            on 의 값이 true 일 경우 우유가 들어감. 밀크커피임
+                } else {
+//            on 의 값이 false 일 경우
+                }
+                break;
+            case R.id.checkbox_sugar:    //switchcase 문 분기할 때 콜론을 이용
+                if (con) {
+//            on 의 값이 true 일 경우
+                } else {
+//            on 의 값이 false 일 경우 - 설탕 안들어감, 블랙커피임
+                }
+                break;
+
+        }
+    }
+
+    public void onRadiobuttonClicked (android.view.View view) {
+        RadioGroup rg = (RadioGroup) findViewById (R.id.radio_group);
+        int rgid = rg.getCheckedRadioButtonId();
+        switch (rgid) {
+            case R.id.radio_caveman:
+                // 라디오 버튼이 원시인 으로 선택되었을 경우
+                break;
+            case R.id.radio_astronaut:
+                // 라디오 버튼이 우주인 으로 선택되었을 경우
+                break;
+
+        }
+
     }
 }

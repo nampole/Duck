@@ -8,4 +8,6 @@
     <string name="off">버튼OFF</string>
     <string name="milk">우유</string>
     <string name="sugar">설탕</string>
+    <string name="rtxt1">원시인</string>
+    <string name="rtxt2">우주인</string>
 </resources>
