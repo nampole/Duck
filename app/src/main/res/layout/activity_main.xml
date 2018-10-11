@@ -65,9 +65,8 @@
             android:layout_height="wrap_content"
             android:textOn="@string/on"
             android:textOff="@string/off"
+            android:onClick="onSwitchClicked"
             />
-            <!--android:onClick="onSwitchClicked"-->
-
 
     </LinearLayout>
 
