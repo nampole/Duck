@@ -68,8 +68,12 @@ public class MainActivity extends Activity {
             case R.id.radio_astronaut:
                 // 라디오 버튼이 우주인 으로 선택되었을 경우
                 break;
-
         }
+    }
 
+    public void onSpinnerClicked (android.view.View view) {
+        android.widget.Spinner sp = (android.widget.Spinner) findViewById (R.id.spinner);
+        String spstr = String.valueOf(sp.getSelectedItem());
+        // spinner 를 선택하였을 경우
     }
 }

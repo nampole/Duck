@@ -102,7 +102,13 @@
                 android:onClick="onRadiobuttonClicked"
                 />
         </RadioGroup>
-
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_values"
+            android:onClick="onSpinnerClicked"
+            />
 
     </LinearLayout>
 

@@ -10,4 +10,11 @@
     <string name="sugar">설탕</string>
     <string name="rtxt1">원시인</string>
     <string name="rtxt2">우주인</string>
+    <string-array name="spinner_values">
+        <item>밝은색</item>
+        <item>호박색</item>
+        <item>갈색</item>
+        <item>어두운색</item>
+        <item>초록색</item>
+    </string-array>
 </resources>
