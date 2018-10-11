@@ -2,6 +2,7 @@ package com.hfad.duck;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.ToggleButton;
@@ -76,4 +77,13 @@ public class MainActivity extends Activity {
         String spstr = String.valueOf(sp.getSelectedItem());
         // spinner 를 선택하였을 경우
     }
+
+    public void onImageClicked (android.view.View view) {
+        ImageView photo = (ImageView) findViewById(R.id.photo);
+        int image = R.drawable.starbuzz_logo;
+        String description = "This is the logo";
+        photo.setImageResource(image);
+        photo.setContentDescription(description);
+    }
+
 }
