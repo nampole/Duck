@@ -2,6 +2,7 @@ package com.hfad.duck;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Switch;
 import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
@@ -25,8 +26,8 @@ public class MainActivity extends Activity {
             }
     }
 
-    public void  onSwitchClicked (android.view.View view) {
-        boolean son = ((Switch) view).isChecked();
+    public void onSwitchClicked (android.view.View view) {
+        boolean son = ((android.widget.Switch) view).isChecked();
         if (son) {
 //            on 의 값이 true 일 경우
         }
